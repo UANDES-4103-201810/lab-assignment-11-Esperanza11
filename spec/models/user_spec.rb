@@ -1,5 +1,5 @@
 require 'rails_helper'
-RSpec.describe ModelName, type: :model do
+RSpec.describe User, type: :model do
   it "Utest 1" do #usuario valido
     @user = create(:User)
     expect(@user).to be_valid

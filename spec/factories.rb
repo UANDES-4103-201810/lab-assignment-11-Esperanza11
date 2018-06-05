@@ -1,4 +1,5 @@
 FactoryBot.define do
+
   factory :User do
     username "Espe"
     password 1 # integer value
@@ -8,6 +9,6 @@ FactoryBot.define do
   factory :Message do
     user_id 1
     date Date.today # integer value
-    email "lalala"
+    content "lalala"
   end
 end
