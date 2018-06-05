@@ -6,17 +6,19 @@ RSpec.describe User, type: :model do
   end
 
   it "Utest 2" do #username
-    @user = create(:User, email: "u2",password: 2)
-    expect(@user).to_not be_valid
+    @user = create(:User)
+    @user2 = build(:User, email: "u2",password: 2)
+    expect(@user2).to_not be_valid
   end
 
   it "Utest 3" do #mail
-    @user = create(:User, username: "Espe13", password: 3)
-    expect(@user).to_not be_valid
+    @user = create(:User)
+    @user2 = build(:User, username: "Espe13", password: 3)
+    expect(@user2).to_not be_valid
   end
 
   it "Utest 3" do #20
-    @user = create(:User, username: "012345678901234567890")
+    @user = build(:User, username: "012345678901234567890")
     expect(@user).to_not be_valid
   end
 
